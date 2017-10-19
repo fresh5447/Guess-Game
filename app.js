@@ -1,7 +1,14 @@
+// 1) Create a basic Guesser constructor, and use it to make a new guess.. console.log to make sure it works.
+// 2) Add the prototype function guess... to test have it accept a parameter and console.log that parameter
+// you can also show how you have access to this.lives or this.number and do a console.log
+// 3) Do the logic for the number being too high or low... just console.log if the guess is higher or lower then the number
+// 4) Add the logic that will remove the life if guess is incorrect.
+
 function Guesser(number, lives) {
   this.number = number
   this.lives = lives
 }
+
 
 Guesser.prototype.guess = function(n) {
   if(n > this.number) {
